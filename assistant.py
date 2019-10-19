@@ -3,8 +3,8 @@ from audioReply import getAudioReply
 from findGamePrice import findGamePrice
 
 def main():
-	#recordedAudio = recordAudio()
-	recordedAudio = "rimworld"
+	recordedAudio = recordAudio()
+	# recordedAudio = "rimworld"
 	messageText = recordedAudio.split()
 	response = findGamePrice(messageText)
 	getAudioReply(response)
