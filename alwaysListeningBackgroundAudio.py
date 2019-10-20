@@ -38,9 +38,9 @@ def callback(recognizer, audio):
 		# Convert audio to text using Google Speech Recognition
 		commandInput = recognizer.recognize_google(audio)
 		# Get a match on trigger word; returns array of len 1
-		commandAfterTrigger = re.findall("(?<=^Edith).*", commandInput)
+		commandAfterTrigger = re.findall("(?<=^Edith\s).*", commandInput)
 		if (commandAfterTrigger):
-			print(commandAfterTrigger)
+			print(commandAfterTrigger[0])
 			assistant(commandAfterTrigger[0])
 		else:
 			print("Failed")

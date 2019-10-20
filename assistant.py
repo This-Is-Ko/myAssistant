@@ -1,18 +1,19 @@
 from audioReply import getAudioReply
 from findGamePrice import findGamePrice
+from defineWord import define_word
 import re
 
 def assistant(commandText):
 	# commandText = recordedAudio.split()
 	if (re.search("lyrics", commandText)):
 		print("LYRICS")
-	elif (re.search("define\s\w+", commandText)):
+	elif (re.search("define", commandText)):
 		print("DEFINE")
+		response = define_word(commandText)
 	elif (re.search("what's\sthe\sweather", commandText)):
 		print("WEATHER")
 	
-	# response = findGamePrice(commandText)
-	# getAudioReply(response)
+	getAudioReply(response)
 
 def main():
 	recordedAudio = recordAudio()

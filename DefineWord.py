@@ -1,5 +1,9 @@
-#Function to get definition from Dictionary.com	
-def definition_function(message_text):
+from PyDictionary import *
+
+# Function to get definition from Dictionary.com	
+def define_word(commandText):
+	# Split command into array of words
+	message_text = commandText.split()
 	if len(message_text) == 1:
 		return "No word to define"
 	definition_words = ["define", "definition", "mean", "meaning", "mean?", "meaning?", "definition?"]
@@ -16,6 +20,7 @@ def definition_function(message_text):
 		else:
 			word_define = word
 	dictionary = PyDictionary()
+	print("Trying to define " + word_define)
 	try:
 		definition = dictionary.meaning(word_define)
 		print_definition = []
