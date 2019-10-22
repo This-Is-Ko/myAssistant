@@ -20,7 +20,7 @@ def findGamePrice(message_text):
 		current_lowest_price = cheapshark_json["cheaperStores"][0]["salePrice"]
 		historical_lowest_price = cheapshark_json["cheapestPrice"]["price"]
 		if (current_lowest_price == historical_lowest_price):
-			response = ("Currently the lowest price for {} is ${}. This is the lowest price to date. :)").format(game_name, current_lowest_price)
+			response = ("Currently the lowest price for {} is ${}. This is the lowest price to date.").format(game_name, current_lowest_price)
 		else:
 			response = ("Currently the lowest price for {} is ${}. The historic lowest is ${}.").format(game_name, current_lowest_price, historical_lowest_price)
 	except:

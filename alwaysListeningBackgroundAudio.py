@@ -40,7 +40,7 @@ def callback(recognizer, audio):
 		# Get a match on trigger word; returns array of len 1
 		commandAfterTrigger = re.findall("(?<=^Edith\s).*", commandInput)
 		if (commandAfterTrigger):
-			print(commandAfterTrigger[0])
+			print(commandAfterTrigger)
 			assistant(commandAfterTrigger[0])
 		else:
 			print("Failed")
