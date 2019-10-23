@@ -3,6 +3,7 @@ from findGamePrice import findGamePrice
 from defineWord import define_word
 from googleSearch import search_google
 import re
+import settings
 
 def assistant(command_text):
 	'''
@@ -26,7 +27,7 @@ def assistant(command_text):
 		response = "WEATHER function here"
 	elif (re.search("google\s+\w+", command_text)):
 		print("GOOGLE function here")
-		getAudioReply("On it!")
+		getAudioReply("I'm on it!")
 		command_text = remove_first_term(command_text)
 		search_google(command_text)
 		response = "Google complete"
@@ -39,7 +40,7 @@ def assistant(command_text):
 def main():
 	# recordedAudio = recordAudio()
 	# Test input
-	# recordedAudio = "google python"
+	recordedAudio = "google python"
 	assistant(recordedAudio)
 
 def remove_first_term(command_text):
