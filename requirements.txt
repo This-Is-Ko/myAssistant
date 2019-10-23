@@ -2,3 +2,5 @@ PyDictionary
 SpeechRecognition
 pydub
 gtts
+selenium
+pocketsphinx
