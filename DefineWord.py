@@ -34,3 +34,4 @@ def define_word(command_text):
 		return response
 	except:
 		return ("I could not define {}. Please check the spelling.").format(word_define)
+		

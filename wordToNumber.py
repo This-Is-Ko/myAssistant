@@ -29,3 +29,4 @@ def text2int(textnum, numwords={}):
 						current = 0
 
 		return result + current
+		

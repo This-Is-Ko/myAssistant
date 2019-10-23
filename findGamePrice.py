@@ -30,3 +30,4 @@ def findGamePrice(message_text):
 		except:
 			response = "I couldn't find price information for that game. Check that you spelt the game correctly."
 	return response
+	
