@@ -4,7 +4,7 @@ from pydub.playback import play
 
 def getAudioReply(audioString):
 	makeAudioReply(audioString)
-	playAudio('reply.mp3')
+	playAudio("temp\\output\\reply.mp3")
 
 def makeAudioReply(audioString):
 	print(audioString)

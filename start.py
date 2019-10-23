@@ -1,3 +1,6 @@
+import sys
+sys.path.append('scripts')
+
 from audioReply import playAudio
 from backgroundListener import run_background_assistant
 

@@ -2,3 +2,4 @@ venv/
 extra_packages/
 temp/
 __pycache__/
+scripts/__pycache__/
