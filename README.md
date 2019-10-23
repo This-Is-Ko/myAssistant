@@ -11,6 +11,7 @@ Run myAssistant
 ```
 python start.py
 ```
+myAssistant will then begin to passively listen and if the trigger word is detected (default: "Edith"), it will begin to actively listen for a command and this will be acted upon.
 
 
 Goals: 
