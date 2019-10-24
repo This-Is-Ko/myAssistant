@@ -13,6 +13,15 @@ python start.py
 ```
 myAssistant will then begin to passively listen and if the trigger word is detected (default: "Edith"), it will begin to actively listen for a command and this will be acted upon.
 
+Potential setup issues
+Using pip to install pocketsphinx had issues for me and found the solution [here](https://stackoverflow.com/questions/44504899/installing-pocketsphinx-python-module-command-swig-exe-failed). Download the [binary version](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pocketsphinx) of pocketsphinx and install it.
+```
+pip install pocketsphinx-0.1.15-cp37-cp37m-win32.whl
+```
+Likewise PyAudio also had installation issues which was fixed using the same solution.
+```
+pip install PyAudio-0.2.11-cp37-cp37m-win32.whl
+```
 
 Goals: 
 - [ ] More functionality and API integration
